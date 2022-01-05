@@ -11,7 +11,8 @@ import SwiftUI
 struct CheatSheetBastardApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
+                .environmentObject(Model.instance)
         }
     }
 }
